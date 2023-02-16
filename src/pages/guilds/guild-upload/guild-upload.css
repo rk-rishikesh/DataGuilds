@@ -1,0 +1,10 @@
+.label-input {
+  background-color: #000;
+  color: white;
+  padding: 16px;
+  font-family: sans-serif;
+  border-radius: 0.3rem;
+  cursor: pointer;
+  height: 50px;
+  font-size: 14px;
+}
