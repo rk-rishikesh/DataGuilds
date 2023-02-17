@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700&display=swap");
+
 .home {
   height: 700px;
   background-color: rgb(32,32,32);
@@ -6,21 +6,21 @@
 
 .title {
   font-size: 80px;
-  margin: 160px 0px 0px 0px;
   font-weight: 700;
   color: white;
   text-align: center;
+  margin-top: 150px;
 }
 
 .description {
-  margin-top: 10px;
+  /* margin-top: 10px; */
   text-align: center;
   font-size: 18px;
   color: #fbf8ec;
 }
 
 .btn{
-  margin: 50px 10px 0px 350px;
+  /* margin: 50px 10px 0px 350px; */
   width: 150px;
   height: 50px;
   font-size: 15px;
