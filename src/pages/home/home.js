@@ -7,8 +7,8 @@ function Home() {
   return (
     <>
       <div className="home">
-        <h1 className="title">Creds Guilds </h1>
         <p className="description">
+          <h1 className="title">Creds Guilds</h1><br/>
           The latest edition of the ETHIndia Online Series, ETHForAll is here!
           With this event, we’re shining the spotlight on leveraging crypto
           protocols to solve for the greater good.
