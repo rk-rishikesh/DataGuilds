@@ -1,5 +1,4 @@
 .label-input {
-  background-color: #000;
   color: white;
   padding: 16px;
   font-family: sans-serif;
@@ -7,4 +6,25 @@
   cursor: pointer;
   height: 50px;
   font-size: 14px;
+}
+
+/* img upload */
+#file {
+  display: none;
+  margin: 0 auto;
+}
+
+.upload-icon {
+  width: 200px;
+  background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ1pOnuv06sE-KPV5CqhNnB1D-KlM5gaCFJvk0V3-g7Ncaj-Cz8Zag_iQ6mvGmjzC6ERRw&usqp=CAU);
+  height: 200px;
+}
+
+.button-test {
+  width: 100px;
+  height: 50px;
+  background: url(http://www.java2s.com/style/download.png) no-repeat;
+  cursor: pointer;
+  border: none;
+  margin-bottom: 10px;
 }
