@@ -1,72 +1,68 @@
 import { useNavigate } from "react-router-dom";
 import { Card } from "react-bootstrap";
 import "./guilds-list.css";
+import Divider from '@mui/material/Divider';
 
 function GuildsList() {
   const navigate = useNavigate();
   const guildsList = [
     {
-      imageName: "Guild 1",
-      src: "https://jevelin.shufflehound.com/portfolio-minimalistic/wp-content/uploads/sites/33/2019/04/6essentialiving-8bEUB1cOKwA-unsplash1-420x660.jpg",
+      imageName: "Research Papers",
+      src: "https://i.pinimg.com/originals/7b/f8/a2/7bf8a2514d28fc0d9a360a7f5cc8c8ec.gif",
       info: {
-        guildName: "Dummy Guild Name 1",
-        guildDescription: "Dummy Guild Description 1",
+        guildName: "Web3 Research Papers",
+        guildDescription: "This guild is a collection of major Web3 related research papers",
       },
     },
     {
-      imageName: "Guild 2",
-      src: "https://jevelin.shufflehound.com/portfolio-minimalistic/wp-content/uploads/sites/33/2019/04/12essentialiving-8bEUB1cOKwA-unsplash1-420x660.jpg",
+      imageName: "Cat Images",
+      src: "https://media.tenor.com/ZhfMGWrmCTcAAAAC/cute-kitty-best-kitty.gif",
       info: {
-        guildName: "Dummy Guild Name 2",
-        guildDescription: "Dummy Guild Description 2",
+        guildName: "Cat Images",
+        guildDescription: "This guild is a collection of cat pictures which can be used to train ML models",
       },
     },
     {
-      imageName: "Guild 3",
-      src: "https://jevelin.shufflehound.com/portfolio-minimalistic/wp-content/uploads/sites/33/2019/04/10essentialiving-8bEUB1cOKwA-unsplash1-420x660.jpg",
+      imageName: "NASA - Moon",
+      src: "https://media1.giphy.com/media/aN9GqoR7OD3nq/giphy.gif",
       info: {
-        guildName: "Dummy Guild Name 3",
-        guildDescription: "Dummy Guild Description 3",
+        guildName: "Nasa Moon Collection",
+        guildDescription: "This guild is a official guild for NASA Moon snapshots",
       },
     },
     {
-      imageName: "Guild 4",
-      src: "https://jevelin.shufflehound.com/portfolio-minimalistic/wp-content/uploads/sites/33/2019/04/11essentialiving-8bEUB1cOKwA-unsplash1-420x660.jpg",
+      imageName: "NASA - Solar System",
+      src: "https://media.tenor.com/cDEoYRhFZggAAAAM/planetas-sistema-solar.gif",
 
       info: {
-        guildName: "Dummy Guild Name 4",
-        guildDescription: "Dummy Guild Description 4",
+        guildName: "Nasa Solar System Collection",
+        guildDescription: "This guild is a official guild for NASA Solar System snapshots",
       },
     },
     {
-      imageName: "Guild 5",
-      src: "https://jevelin.shufflehound.com/portfolio-minimalistic/wp-content/uploads/sites/33/2019/04/7essentialiving-8bEUB1cOKwA-unsplash1-420x660.jpg",
+      imageName: "Ancient Greek Coins",
+      src: "https://thumbs.gfycat.com/DeadObedientGangesdolphin-max-1mb.gif",
       info: {
         guildName: "Dummy Guild Name 5",
         guildDescription: "Dummy Guild Description 5",
-      },
-    },
-    {
-      imageName: "Guild 6",
-      src: "https://jevelin.shufflehound.com/portfolio-minimalistic/wp-content/uploads/sites/33/2019/04/1essentialiving-8bEUB1cOKwA-unsplash1-420x660.jpg",
-
-      info: {
-        guildName: "Dummy Guild Name 6",
-        guildDescription: "Dummy Guild Description 6",
       },
     },
   ];
   return (
     <div className="list-section">
       <div>
-        <h2 className="label">Gallery</h2>
+        <br/>
+        <br/>
+        <h2 className="label">Data Guild Hall 📦</h2>
         <p style={{ textAlign: "center", color: "#8d8d8d" }}>
           <em>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
-            iaculis varius cursus.
+            
           </em>
         </p>
       </div>
+      <br/>
+      <br/>
+      <br/>
       <h2 style={{ margin: "0px 0px 30px 200px", color: "white" }}>
         Create yore own guild{" "}
       </h2>
@@ -75,7 +71,7 @@ function GuildsList() {
           <div className="row">
             <div className="col">
               <Card.Img
-                src="https://img.lovepik.com/element/40032/8218.png_300.png"
+                src="https://static.fabrik.io/ryg/39267e07ebc38be6.gif?auto=compress&w=1280&h=1280&fit=max&s=6ea7966cc3cabeeaeb2307849b0512ff"
                 style={{
                   width: "50px",
                   height: "50px",
@@ -97,7 +93,7 @@ function GuildsList() {
         </div>
       </div>
       <h2 style={{ margin: "0px 0px 30px 200px", color: "white" }}>
-        All Guild Lists
+        Guilds
       </h2>
       <div style={{ display: "flex", flexWrap: "wrap", marginLeft: "200px" }}>
         {guildsList.map((image, i) => {
@@ -128,10 +124,10 @@ function GuildsList() {
                 <div className="col">
                   {" "}
                   <Card.Title
-                    style={{ margin: "20px 0px 0px 0px", color: "white" }}
+                    style={{ margin: "10px 0px 0px 0px", color: "white" }}
                   >
                     <br />
-                    <strong>{image.imageName}</strong>
+                    <h6>{image.imageName}</h6>
                   </Card.Title>
                 </div>
               </div>

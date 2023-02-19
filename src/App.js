@@ -6,6 +6,8 @@ import GuildNftList from "./pages/guilds/guild-nft-list/guild-nft-list";
 import GuildUpload from "./pages/guilds/guild-upload/guild-upload";
 import GuildsInfo from "./pages/guilds/guilds-info/guilds-info";
 import GuildsList from "./pages/guilds/guilds-list/guilds-list";
+import GuildsCreate from "./pages/guilds/guild-create/guild-create";
+
 import Home from "./pages/home/home";
 import "./App.css";
 
@@ -20,6 +22,7 @@ export default function App() {
           <Route exact path="guilds-info" element={<GuildsInfo />} />
           <Route exact path="guilds-nft-list" element={<GuildNftList />} />
           <Route exact path="guilds-upload" element={<GuildUpload />} />
+          <Route exact path="guilds-create" element={<GuildsCreate />} />
           <Route exact path="dashboard" element={<Dashboard />} />
         </Routes></div> 
       </Router>

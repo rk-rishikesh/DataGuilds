@@ -3,7 +3,8 @@ import $ from "jquery";
 import React, { useState } from "react";
 import { Card, Form } from "react-bootstrap";
 import "./guild-upload.css";
-
+import { Button } from "react-bootstrap";
+import { AddAPhoto } from "@mui/icons-material";
 function GuildUpload() {
   const navigate = useNavigate();
   $(function () {
@@ -48,18 +49,20 @@ function GuildUpload() {
   });
 
   return (
-    <div className="container" style={{ display: 'flex',justifyContent: 'center' }}>
+    <div className="create-section" style={{ display: 'flex',justifyContent: 'center' }}>
+
       <Form
         style={{
+          padding:"5%",
           width: "650px",
-          backgroundColor: "aliceblue",
           height:'auto'
         }}
       >
         <Card style={{ height: "auto" }}>
           <Card.Header>
+            
             <Card.Img
-              src="https://thumbs.dreamstime.com/b/environment-earth-day-hands-trees-growing-seedlings-bokeh-green-background-female-hand-holding-tree-nature-field-gra-130247647.jpg"
+              src="https://cutewallpaper.org/cdn-cgi/mirage/91b98c5373d6a01796e55b9f978389531ff4e5ebae85abd935c54ab8d42fdd46/1280/25/animated-wallpaper-backgrounds-gif/everybody-wants-to-build-and-nobody-wants-to-do-maintenance39-website-backgrounds-technology-wallpaper-gif-background.gif"
               width="100%"
               height="200px"
             ></Card.Img>
@@ -68,13 +71,24 @@ function GuildUpload() {
             <div className="row">
               <div style={{ textAlign: "center" }}>
                 <p>
-                  <label id="img-data" htmlFor="input"></label>
+                  <label id="img-data" htmlFor="input">
+                  Propose Your Data
+                  </label>
                 </p>
               </div>
 
-              <div className="input col text-center">
-                <input name="input" id="file" type="file" />
-              </div>
+              <label htmlFor="upload-photo">
+                <input
+                  style={{ display: "none" }}
+                  id="upload-photo"
+                  name="upload-photo"
+                  type="file"
+                />
+
+                <Button color="secondary" variant="contained" component="span">
+                  <AddAPhoto style={{marginLeft:"170%"}} />
+                </Button>
+              </label>
             </div>
             <Form.Group controlId="title">
               <Form.Control
@@ -117,7 +131,7 @@ function GuildUpload() {
                     padding: "10px",
                   }}
                 >
-                  DAO Dashboard
+                  Propose Data
                 </button>
               </div>
             </div>

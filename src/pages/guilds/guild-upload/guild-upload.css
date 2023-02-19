@@ -28,3 +28,10 @@
   border: none;
   margin-bottom: 10px;
 }
+
+
+.create-section{
+  height: 655px;
+  background-color: rgb(32,32,32);
+  color:'white';
+}

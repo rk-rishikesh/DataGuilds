@@ -6,56 +6,74 @@ function GuildNftList() {
   const navigate = useNavigate();
   const artImage = [
     {
-      imageName: "Brendon Cremer",
+      imageName: "Blockchain & Real Estates",
       description:
-        "Having won the Nature’s Best African Wildlife Photographer of the Year 2017, it is only fitting to pay tribute to Brendon Cremer. Technically, every image is on point, but they also tell a story. Perhaps this is what is most captivating about this born and raised Zimbabwean (who now resides in South Africa).",
+        "Safeguarding The Records Of Homes, Lands, And Property For Displaced Peoples Using Decentralized Trust and security provided by Blockchain.",
       price: "1245",
-     src:"https://t4.ftcdn.net/jpg/05/52/20/61/360_F_552206181_KdToyQFo2ZSqBTv2aBiMUJcDVPXaaE3p.jpg"
+      src: "https://d3lkc3n5th01x7.cloudfront.net/wp-content/uploads/2019/05/15233606/700-X-394.png",
     },
     {
-      imageName: "Brendon Cremer",
+      imageName: "Bitcoin Whitepaper",
       description:
-        "Having won the Nature’s Best African Wildlife Photographer of the Year 2017, it is only fitting to pay tribute to Brendon Cremer. Technically, every image is on point, but they also tell a story. Perhaps this is what is most captivating about this born and raised Zimbabwean (who now resides in South Africa).",
+        "A purely peer-to-peer version of electronic cash would allow online payments to be sent directly from one party to another without going through a financial institution.",
       price: "1245",
-      src:'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRKjZxiBXilrYnqWygFM6g_T6AA9Aoi7fhBdg&usqp=CAU'
-    },
-    {
-      imageName: "Brendon Cremer",
-      description:
-        "Having won the Nature’s Best African Wildlife Photographer of the Year 2017, it is only fitting to pay tribute to Brendon Cremer. Technically, every image is on point, but they also tell a story. Perhaps this is what is most captivating about this born and raised Zimbabwean (who now resides in South Africa).",
-      price: "1245",
-      src: "https://content.wepik.com/statics/11164705/preview-page0.jpg",
-    },
-    {
-      imageName: "Brendon Cremer",
-      description:
-        "Having won the Nature’s Best African Wildlife Photographer of the Year 2017, it is only fitting to pay tribute to Brendon Cremer. Technically, every image is on point, but they also tell a story. Perhaps this is what is most captivating about this born and raised Zimbabwean (who now resides in South Africa).",
-      price: "1245",
-      src: "https://www.fabmood.com/wp-content/uploads/2022/01/brown-aesthetic-wallpaper-6.jpg"
-    },
+      src: "https://www.buyucoin.com/crypto-labs/wp-content/uploads/2021/10/celebrating-the-seminal-bitcoin-white-paper-satoshi-nakamoto-published-13-years-ago-today-6mXZNb.jpeg",
+    }
   ];
   return (
-    <div style={{ backgroundColor: "white", width: "100%",marginTop:'20px' }}>
+    <div style={{ backgroundColor: "rgb(32,32,32)", width: "100%" }}>
       <div>
         <h3
-          className="heading"
-          style={{ fontSize: "40px", fontFamily: "serif",textAlign:'center' }}
+          style={{
+            fontSize: "40px",
+            fontFamily: "serif",
+            textAlign: "center",
+            color: "white",
+            marginTop: "3%",
+          }}
         >
-          Guild NFT List
+          Guild Data :  Research Papers
         </h3>
         <hr />
-        <Button style={{
-                        width: "100px",
-                        height: "40px",
-                        textAlign: "center",
-                        borderRadius: "0",
-                        backgroundColor: "black",
-                        border: "none",
-                        margin:'0px 0px 20px 1300px'
-                      }} onClick={() => {
-                        navigate("/guilds-upload");
-                      }}>Upload</Button>
+
+        <h2 style={{ margin: "0px 0px 30px 170px", color: "white" }}>
+          Submit Data Proposal{" "}
+        </h2>
+        <div style={{ display: "flex", flexWrap: "wrap", marginLeft: "170px" }}>
+          <div className="guild-section">
+            <div className="row">
+              <div className="col">
+                <Card.Img
+                  src="https://static.fabrik.io/ryg/39267e07ebc38be6.gif?auto=compress&w=1280&h=1280&fit=max&s=6ea7966cc3cabeeaeb2307849b0512ff"
+                  style={{
+                    width: "50px",
+                    height: "50px",
+                    borderRadius: "50%",
+                    margin: "30px 0px 0px 30px",
+                  }}
+                />
+              </div>
+              <div className="col">
+                {" "}
+                <Card.Title
+                  style={{ margin: "10px 0px 0px 0px", color: "white" }}
+                  onClick={() => {
+                    navigate("/guilds-upload");
+                  }}
+                >
+                  <br />
+                  <strong>Propose Data</strong>
+                </Card.Title>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
+
+      <h2 style={{ margin: "0px 0px 30px 170px", color: "white" }}>
+        Guild Data
+      </h2>
+
       <div
         className="row"
         style={{ display: "flex", justifyContent: "center" }}
@@ -82,26 +100,14 @@ function GuildNftList() {
                   <span>
                     <Button
                       style={{
-                        width: "100px",
-                        height: "40px",
-                        textAlign: "center",
-                        borderRadius: "0",
-                        backgroundColor: "black",
-                        border: "none",
-                        margin:'0px 0px 0px 280px'
+                        width:"auto",
+                        backgroundColor: "grey",
+                        borderRadius:"4%",
+                        margin: "0px 0px 0px 370px",
                       }}
                     >
-                      Buy 1
+                      🔐 Get Access
                     </Button>
-                    <Button style={{
-                        width: "100px",
-                        height: "40px",
-                        textAlign: "center",
-                        borderRadius: "0",
-                        backgroundColor: "black",
-                        border: "none",
-                        margin:'0px 0px 0px 20px'
-                      }}>Buy 2</Button>
                   </span>
                 </Card.Footer>
               </Card>

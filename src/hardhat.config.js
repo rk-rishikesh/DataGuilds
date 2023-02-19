@@ -1,7 +1,7 @@
 require("@nomicfoundation/hardhat-toolbox")
 require("hardhat-deploy")
 require("hardhat-deploy-ethers")
-// require("./tasks/deploy") // Your deploy task.
+require("./tasks/deploy") // Your deploy task.
 
 /** @type import('hardhat/config').HardhatUserConfig */
 module.exports = {
